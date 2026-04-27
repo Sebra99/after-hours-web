@@ -250,7 +250,7 @@ export default function Home() {
                   <img src="/maquila/maq2.jpeg" alt="Proceso de producción" className="h-[182px] w-full object-cover" />
                 </div>
                 <div className="overflow-hidden rounded-xl">
-                  <img src="/maquila/maq3.jpg" alt="Shoot y producto" className="h-[182px] w-full object-cover" />
+                  <img src="/maquila/maq3.JPG" alt="Shoot y producto" className="h-[182px] w-full object-cover" />
                 </div>
               </div>
             </div>
