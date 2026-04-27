@@ -50,3 +50,26 @@ body {
 .animate-vertical {
   animation: verticalScroll 30s linear infinite;
 }
+
+@keyframes marquee-slow {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.33%); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-33.33%); }
+  to { transform: translateX(0); }
+}
+
+
+.animate-marquee-slow {
+  animation: marquee-slow 40s linear infinite;
+}
+
+.animate-marquee-reverse-slower {
+  animation: marquee-reverse 55s linear infinite;
+}
+
+.animate-marquee-slowest {
+  animation: marquee-slow 70s linear infinite;
+}
