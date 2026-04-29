@@ -63,7 +63,7 @@ body {
 
 
 .animate-marquee-slow {
-  animation: marquee-slow 40s linear infinite;
+  animation: marquee-slow 30s linear infinite;
 }
 
 .animate-marquee-reverse-slower {
@@ -71,5 +71,5 @@ body {
 }
 
 .animate-marquee-slowest {
-  animation: marquee-slow 70s linear infinite;
+  animation: marquee-slow 60s linear infinite;
 }

@@ -54,6 +54,7 @@ export default function Home() {
     "Frontera1.png",
     "Rappi2.png",
     "Perspektiva1.png",
+    "Llama1.png",
     "C.Democratico.png",
   ];
 
@@ -82,7 +83,7 @@ export default function Home() {
  
  <main className="relative min-h-screen text-white">
   <div className="absolute inset-0 -z-10">
-    <img src="hero2.png" alt="background" className="w-full h-full object-cover" />
+    <img src="hero3.png" alt="background" className="w-full h-full object-cover" />
     <div className="absolute inset-0 bg-black/60" />  {/* ← sube de 0.2 a 0.6 */}
   </div>
 
