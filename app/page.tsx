@@ -83,12 +83,12 @@ export default function Home() {
  
  <main className="relative min-h-screen text-white">
   <div className="absolute inset-0 -z-10">
-    <img src="hero3.png" alt="background" className="w-full h-full object-cover" />
+    <img src="hero4.png" alt="background" className="w-full h-full object-cover" />
     <div className="absolute inset-0 bg-black/60" />  {/* ← sube de 0.2 a 0.6 */}
   </div>
 
       {/* ── HERO ── */}
-      <section style={{ position: "relative", overflow: "hidden", backgroundColor: "black", borderBottom: "1px solid rgba(255,255,255,0.1)", minHeight: "520px" }}>
+      <section style={{ position: "relative", overflow: "hidden", backgroundColor: "black", borderBottom: "1px solid rgba(170, 165, 165, 0.1)", minHeight: "520px" }}>
 
         {/* Fila 1 */}
         <div style={{ position: "absolute", top: "15%", left: 0, display: "flex", gap: "32px", animation: "marquee-slow 40s linear infinite", whiteSpace: "nowrap" }}>
@@ -116,9 +116,9 @@ export default function Home() {
 
         {/* Contenido */}
         <div style={{ position: "relative", zIndex: 10, maxWidth: "100%", display: "flex", justifyContent: "center", padding: "80px 48px" }}>
-          <div style={{ maxWidth: "900px", borderRadius: "24px", border: "1px solid rgba(255,255,255,0.5)", backgroundColor: "rgba(0,0,0,0.7)", padding: "40px", backdropFilter: "blur(0spx)" }}>
+          <div style={{ maxWidth: "900px", borderRadius: "24px", border: "1px solid rgba(255,255,255,0.5)", backgroundColor: "rgba(255, 255, 255, 0.15)", padding: "40px", backdropFilter: "blur(0spx)" }}>
             <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "16px" }}>
-              Brandealo by After Hours
+              BrandLab by After Hours
             </p>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 600, lineHeight: 0.95, color: "white", margin: 0 }}>
               Creamos merch. Creamos identidad.
@@ -175,9 +175,9 @@ export default function Home() {
               { name: "Gorras", slug: "gorras", image: "/catalogo/gorras.png" },
               { name: "Camisetas", slug: "camisetas", image: "/catalogo/camisetas.png" },
               { name: "Hoodies", slug: "hoodies", image: "/catalogo/hoodies.png" },
-              { name: "Tote Bags", slug: "totebags", image: "/catalogo/totebags.png" },
-              { name: "Termos", slug: "termos", image: "/catalogo/termos.png" },
-              { name: "Esferos", slug: "esferos", image: "/catalogo/esferos.png" },
+              { name: "Tote Bags y Maletas", slug: "totebags", image: "/catalogo/totebags.png" },
+              { name: "Termos y Vasos", slug: "termos", image: "/catalogo/termos.png" },
+              { name: "Promocionales y mas...", slug: "esferos", image: "/catalogo/esferos.png" },
             ].map((item) => (
               <Link key={item.slug} href={`/${item.slug}`} className="group block">
                 <div style={{ position: "relative", height: "260px", overflow: "hidden", borderRadius: "1rem", border: "1px solid rgba(255,255,255,0.1)" }}>
@@ -197,8 +197,9 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* ── SERVICIOS ── */}
-      <section className="border-b border-white/10 px-6 py-14 md:px-10">
+      <section className="border-b border-white/10 px-6 py-14 md:px-10 bg-[#13183c]">
         <div className="mx-auto max-w-5xl">
           <div className="mb-8 grid gap-4 md:grid-cols-[0.9fr_1.1fr] md:items-start">
             <div>
@@ -225,6 +226,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* ── MAQUILA ── */}
      <section id="maquila" className="px-6 py-14 md:px-10">
