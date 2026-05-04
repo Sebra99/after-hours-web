@@ -53,6 +53,7 @@ export default function Home() {
     "Inchcape1.png",
     "Frontera1.png",
     "Rappi2.png",
+    "Cyglo.png",
     "Perspektiva1.png",
     "Llama1.png",
     "C.Democratico.png",

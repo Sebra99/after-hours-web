@@ -100,30 +100,44 @@ export default function HoodiesPage() {
         </div>
       </section>
 
-      {/* ENFOQUE */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Enfoque
-            </p>
+<section className="relative isolate overflow-hidden border-b border-white/10">
 
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Más que una prenda básica
-            </h2>
-          </div>
+  {/* IMAGEN FULL */}
+  <div className="absolute inset-0">
+    <img
+      src="/hoodies/telas.png"
+      alt="Telas de colores"
+      className="h-full w-full object-cover"
+    />
 
-          <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-            Un hoodie bien ejecutado puede ser uniforme, regalo, merch de
-            comunidad o producto de lanzamiento. La diferencia está en el fit,
-            la tela, la técnica y la forma en la que la marca se integra a la
-            prenda.
-          </p>
-        </div>
-      </section>
+    {/* oscurece para legibilidad */}
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* textura / depth (opcional pero recomendado) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+  </div>
+
+  {/* CONTENIDO */}
+  <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
+    <div className="max-w-2xl">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
+        
+      </p>
+
+      <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
+      </p>
+
+    </div>
+  </div>
+</section>
+
 
       {/* TIPOS */}
-      <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="tipos" className="border-b border-white/10 px-6 py-14 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -137,8 +151,7 @@ export default function HoodiesPage() {
             </div>
 
             <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-              Seleccionamos la base según el uso: equipo interno, lanzamiento,
-              gifting, comunidad o producto con intención comercial.
+        
             </p>
           </div>
 
@@ -168,36 +181,7 @@ export default function HoodiesPage() {
         </div>
       </section>
 
-      {/* ACABADOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-            <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Personalización
-              </p>
 
-              <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-                Acabados que elevan la pieza
-              </h2>
-            </div>
-
-            <div className="border-t border-white/10">
-              {finishes.map((item) => (
-                <div
-                  key={item.title}
-                  className="grid gap-3 border-b border-white/10 py-6 md:grid-cols-[0.7fr_1.3fr]"
-                >
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="text-base leading-7 text-white/65">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
 <section className="border-b border-white/10 px-6 py-20 md:px-10">
   <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-center">
@@ -263,43 +247,10 @@ export default function HoodiesPage() {
   </div>
 </section>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
-            </p>
+      
 
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Proyectos donde la prenda debe sentirse especial
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Equipos internos",
-              "Lanzamientos de marca",
-              "Drops",
-              "Merch de comunidad",
-              "Regalos corporativos",
-              "Eventos",
-              "Crew uniforms",
-              "Colecciones cápsula",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GALERÍA */}
-      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10">
+      {/* REFERENCIAS */}
+      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#13183c]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -337,7 +288,7 @@ export default function HoodiesPage() {
 
 
       {/* FAQ */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

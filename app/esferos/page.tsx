@@ -51,7 +51,7 @@ export default function OficinaPage() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="/esferos/hero-esferos.jpg"
+            src="/esferos/hero-esferos.png"
             alt="Esferos y promocionales personalizados"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -73,7 +73,7 @@ export default function OficinaPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-[0.95] md:text-7xl">
-              Esferos y más piezas promocionales para tu marca
+              Promocionales y mucho mas
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
@@ -101,27 +101,7 @@ export default function OficinaPage() {
         </div>
       </section>
 
-      {/* ENFOQUE */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Enfoque
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Merch útil, simple y de alto alcance
-            </h2>
-          </div>
-
-          <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-            Esta categoría funciona cuando necesitas volumen, recordación y uso
-            práctico. Son piezas pequeñas, pero bien escogidas pueden acompañar
-            eventos, oficinas, kits comerciales y acciones promocionales sin
-            elevar demasiado el presupuesto.
-          </p>
-        </div>
-      </section>
+   
 
       {/* TIPOS */}
       <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10">
