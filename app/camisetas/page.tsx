@@ -55,7 +55,7 @@ export default function CamisetasPage() {
             alt="Camisetas personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
         </div>
 
@@ -73,9 +73,8 @@ export default function CamisetasPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-[0.95] md:text-7xl">
-              Camisetas personalizadas para marcas, eventos y equipos
+              Camisetas y polos personalizadas 
             </h1>
-
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
               Una de las piezas más versátiles para merch, campañas, dotación
               ligera y proyectos donde el volumen y la presencia visual importan.

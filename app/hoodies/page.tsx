@@ -55,7 +55,7 @@ export default function HoodiesPage() {
             alt="Hoodies personalizados"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
         </div>
 
@@ -73,7 +73,7 @@ export default function HoodiesPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-[0.95] md:text-7xl">
-              Hoodies para marcas, equipos y lanzamientos
+              Hoodies y sacos para tu marcas
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
@@ -111,7 +111,7 @@ export default function HoodiesPage() {
     />
 
     {/* oscurece para legibilidad */}
-    <div className="absolute inset-0 bg-black/60" />
+    <div className="absolute inset-0 bg-black/30" />
 
     {/* textura / depth (opcional pero recomendado) */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />

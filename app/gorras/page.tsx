@@ -55,7 +55,7 @@ export default function GorrasPage() {
             alt="Gorras personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/30" />
         </div>
 

@@ -55,7 +55,7 @@ export default function TermosPage() {
             alt="Termos y vasos personalizados"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
         </div>
 

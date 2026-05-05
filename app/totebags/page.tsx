@@ -55,7 +55,7 @@ export default function ToteBagsPage() {
             alt="Tote bags personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
         </div>
 
@@ -73,11 +73,11 @@ export default function ToteBagsPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-[0.95] md:text-7xl">
-              Tote bags personalizadas para marcas y eventos
+              Tote bags  y maletas personalizadas
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">
-              Una pieza simple, útil y altamente visible. Ideal para eventos,
+              Una pieza útil y altamente visible. Ideal para eventos,
               activaciones, kits y merch que sigue circulando.
             </p>
 
@@ -111,7 +111,7 @@ export default function ToteBagsPage() {
     />
 
     {/* oscurece para legibilidad */}
-    <div className="absolute inset-0 bg-black/60" />
+    <div className="absolute inset-0 bg-black/40" />
 
     {/* textura / depth (opcional pero recomendado) */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
@@ -159,7 +159,7 @@ export default function ToteBagsPage() {
       </section>
 
       {/* TIPOS */}
-      <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -205,7 +205,7 @@ export default function ToteBagsPage() {
       </section>
 
       {/* PERSONALIZACIÓN */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#c77f05]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
             <div>
@@ -235,40 +235,6 @@ export default function ToteBagsPage() {
         </div>
       </section>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Proyectos donde necesitas volumen y utilidad
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Eventos",
-              "Activaciones",
-              "Kits empresariales",
-              "Ferias",
-              "Retail básico",
-              "Merch de comunidad",
-              "Campañas promocionales",
-              "Regalos corporativos",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* GALERÍA */}
       <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10">
@@ -307,57 +273,10 @@ export default function ToteBagsPage() {
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Proceso
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Así trabajamos tus tote bags
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              {
-                title: "Brief",
-                desc: "Entendemos marca, cantidad, uso y referencias.",
-              },
-              {
-                title: "Base",
-                desc: "Definimos tamaño, material, técnica y proporción.",
-              },
-              {
-                title: "Producción",
-                desc: "Ejecutamos con foco en consistencia y acabado.",
-              },
-              {
-                title: "Entrega",
-                desc: "Organizamos cantidades y entrega final.",
-              },
-            ].map((step, index) => (
-              <div
-                key={step.title}
-                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
-              >
-                <p className="text-sm text-white/40">0{index + 1}</p>
-
-                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-white/65">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* COTIZAR */}
-      <section id="cotizar" className="px-6 py-20 md:px-10">
+      <section id="cotizar" className="px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">
