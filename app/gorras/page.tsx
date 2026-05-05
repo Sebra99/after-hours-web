@@ -51,12 +51,12 @@ export default function GorrasPage() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="/gorras/hero-gorras.jpg"
+            src="/gorras/hero-gorras.png"
             alt="Gorras personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/30" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
@@ -84,7 +84,7 @@ export default function GorrasPage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#cotizar"
-                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:opacity-90"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:opacity-80"
               >
                 Cotizar gorras
               </a>
@@ -99,6 +99,42 @@ export default function GorrasPage() {
           </div>
         </div>
       </section>
+
+<section className="relative isolate overflow-hidden border-b border-white/10">
+
+  {/* IMAGEN FULL */}
+  <div className="absolute inset-0">
+    <img
+      src="/gorras/gorra.png"
+      alt="Telas de colores"
+      className="h-full w-full object-cover"
+    />
+
+    {/* oscurece para legibilidad */}
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* textura / depth (opcional pero recomendado) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+  </div>
+
+  {/* CONTENIDO */}
+  <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
+    <div className="max-w-2xl">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
+        
+      </p>
+
+      <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
+      </p>
+
+    </div>
+  </div>
+</section>
+
 
       {/* ENFOQUE */}
       <section className="border-b border-white/10 px-6 py-20 md:px-10">
@@ -122,7 +158,7 @@ export default function GorrasPage() {
       </section>
 
       {/* TIPOS */}
-      <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -198,43 +234,10 @@ export default function GorrasPage() {
         </div>
       </section>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Proyectos donde la marca debe estar presente
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Eventos masivos",
-              "Activaciones",
-              "Equipos internos",
-              "Merch de comunidad",
-              "Campañas promocionales",
-              "Dotación ligera",
-              "Ferias",
-              "Lanzamientos",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* GALERÍA */}
-      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#465f40]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>

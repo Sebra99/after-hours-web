@@ -51,7 +51,7 @@ export default function CamisetasPage() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="/camisetas/hero-camisetas.jpg"
+            src="/camisetas/hero-camisetas.png"
             alt="Camisetas personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -114,7 +114,7 @@ export default function CamisetasPage() {
           </div>
 
           <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-            Una camiseta puede ser uniforme, pieza promocional, producto de
+            Uniformes, piezas promocionales, productos de
             lanzamiento o merch de comunidad. La diferencia está en la tela, el
             fit, la técnica y cómo se integra el diseño.
           </p>

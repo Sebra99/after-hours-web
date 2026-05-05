@@ -51,7 +51,7 @@ export default function TermosPage() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="/termos/hero-termos.png"
+            src="/termos/hero-termos1.png"
             alt="Termos y vasos personalizados"
             className="absolute inset-0 h-full w-full object-cover"
           />

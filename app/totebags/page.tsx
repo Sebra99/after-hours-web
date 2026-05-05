@@ -51,7 +51,7 @@ export default function ToteBagsPage() {
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="/totebags/hero-totebags.jpg"
+            src="/totebags/hero-totebags.png"
             alt="Tote bags personalizadas"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -99,6 +99,43 @@ export default function ToteBagsPage() {
           </div>
         </div>
       </section>
+
+<section className="relative isolate overflow-hidden border-b border-white/10">
+
+  {/* IMAGEN FULL */}
+  <div className="absolute inset-0">
+    <img
+      src="/totebags/telas1.png"
+      alt="Telas de colores"
+      className="h-full w-full object-cover"
+    />
+
+    {/* oscurece para legibilidad */}
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* textura / depth (opcional pero recomendado) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+  </div>
+
+  {/* CONTENIDO */}
+  <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
+    <div className="max-w-2xl">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
+        
+      </p>
+
+      <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
 
       {/* ENFOQUE */}
       <section className="border-b border-white/10 px-6 py-20 md:px-10">

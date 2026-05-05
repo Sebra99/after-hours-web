@@ -59,6 +59,19 @@ export default function Home() {
     "C.Democratico.png",
   ];
 
+  const clientLogos1 = [
+    "SignGra1.png",
+    "I+D1.png",
+    "Agybo1.png",
+    "ZoeF1.png",
+    "Frontera1.png",
+    "Rappi2.png",
+    "Cyglo.png",
+    "Perspektiva1.png",
+    "Llama1.png",
+    "C.Democratico.png",
+  ];
+
   const extraServices = [
     {
       title: "Dotaciones empresariales",
@@ -100,7 +113,7 @@ export default function Home() {
 
         {/* Fila 2 */}
         <div style={{ position: "absolute", top: "44%", left: 0, display: "flex", gap: "32px", animation: "marquee-reverse 55s linear infinite", whiteSpace: "nowrap" }}>
-          {[...clientLogos, ...clientLogos, ...clientLogos].map((logo, i) => (
+          {[...clientLogos1, ...clientLogos1, ...clientLogos1].map((logo, i) => (
             <img key={`r2-${i}`} src={`/logos/${logo}`} alt={logo} style={{ height: "164px", width: "auto", opacity: 0.50 }} />
           ))}
         </div>
@@ -178,21 +191,34 @@ export default function Home() {
               { name: "Hoodies", slug: "hoodies", image: "/catalogo/hoodies.png" },
               { name: "Tote Bags y Maletas", slug: "totebags", image: "/catalogo/totebags.png" },
               { name: "Termos y Vasos", slug: "termos", image: "/catalogo/termos.png" },
-              { name: "Promocionales y mas...", slug: "esferos", image: "/catalogo/esferos.png" },
+              { name: "Promocionales y mas...", slug: "esferos", image: "/catalogo/esferos1.png" },
             ].map((item) => (
               <Link key={item.slug} href={`/${item.slug}`} className="group block">
-                <div style={{ position: "relative", height: "260px", overflow: "hidden", borderRadius: "1rem", border: "1px solid rgba(255,255,255,0.1)" }}>
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2) 50%, transparent)", zIndex: 5 }} />
-                  <h3 style={{ position: "absolute", bottom: "16px", left: "16px", zIndex: 10, fontSize: "1.1rem", fontWeight: 600, color: "white", margin: 0 }}>
-                    {item.name}
-                  </h3>
-                </div>
-              </Link>
+  <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] border border-white/10">
+    {/* Imagen */}
+    <img
+      src={item.image}
+      alt={item.name}
+      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+    {/* Contenido */}
+    <div className="absolute inset-x-0 bottom-0 p-4">
+
+      <h3 className="text-lg font-semibold">
+        {item.name}
+      </h3>
+
+      <div className="mt-2 flex items-center gap-2 text-sm text-white/70 transition group-hover:text-white">
+        <span>Ver más</span>
+        <span className="transition group-hover:translate-x-1">→</span>
+      </div>
+    </div>
+  </div>
+</Link>
             ))}
           </div>
         </div>

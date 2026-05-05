@@ -3,34 +3,34 @@ import Link from "next/link";
 export default function DotacionesPage() {
   const products = [
     {
-      title: "Uniformes corporativos",
-      desc: "Polos, camisas, chaquetas y prendas para equipos internos.",
-      image: "/dotaciones/uniformes.jpg",
+      title: "Uniformes escolares",
+      desc: "Polos, camisas, camisetas, sueteres y demas prendas institucionales.",
+      image: "/dotaciones/uniformes.png",
     },
     {
       title: "Gastronomía",
       desc: "Delantales, gorras, camisetas y prendas funcionales para operación.",
-      image: "/dotaciones/gastronomia.jpg",
+      image: "/dotaciones/gastronomia.png",
     },
     {
       title: "Logística y operación",
-      desc: "Prendas resistentes, cómodas y pensadas para uso diario.",
-      image: "/dotaciones/logistica.jpg",
+      desc: "Prendas resistentes, overoles, botas, cascos, y demás pensadas para uso diario.",
+      image: "/dotaciones/logistica.png",
     },
     {
       title: "Salud y bienestar",
-      desc: "Dotación limpia, sobria y funcional para equipos de atención.",
-      image: "/dotaciones/salud.jpg",
+      desc: "Scrubs, chaquetas, lanyards, gorros y todo lo que puedas necesitar.",
+      image: "/dotaciones/salud1.png",
     },
     {
       title: "Retail y atención",
       desc: "Prendas que ayudan a identificar al equipo sin perder presencia de marca.",
-      image: "/dotaciones/retail.jpg",
+      image: "/dotaciones/retail.png",
     },
     {
-      title: "Kits de dotación",
-      desc: "Combinaciones de prendas y accesorios según el rol del equipo.",
-      image: "/dotaciones/kits.jpg",
+      title: "Servicios generales y aseo",
+      desc: "Uniformes, insumos, delantales y más .",
+      image: "/dotaciones/generales.png",
     },
   ];
 
@@ -127,21 +127,19 @@ export default function DotacionesPage() {
             </p>
 
             <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Uniformes que no parecen genéricos
+              Uniformes que se ajustan a tus necesidades
             </h2>
           </div>
 
           <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
             Una buena dotación debe funcionar en operación, pero también debe
-            verse coherente con la marca. Trabajamos prendas útiles, cómodas y
-            visualmente cuidadas para que el equipo se vea unificado sin parecer
-            disfrazado.
+            verse coherente con la marca. Trabajamos cuidadosamente para combinar comodidad y utilidad.
           </p>
         </div>
       </section>
 
       {/* PRODUCTOS */}
-      <section id="productos" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="productos" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -187,38 +185,6 @@ export default function DotacionesPage() {
       </section>
 
       
-
-      {/* PROCESO */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Proceso
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Así trabajamos tu dotación
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {process.map((step, index) => (
-              <div
-                key={step.title}
-                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
-              >
-                <p className="text-sm text-white/40">0{index + 1}</p>
-
-                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-white/65">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* COTIZAR */}
       <section id="cotizar" className="px-6 py-20 md:px-10">
