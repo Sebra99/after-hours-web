@@ -5,17 +5,17 @@ export default function CamisetasPage() {
     {
       title: "Regular fit",
       desc: "Clásica, funcional y fácil de adaptar a eventos, equipos o campañas.",
-      image: "/camisetas/regular.jpg",
+      image: "/camisetas/regular.png",
     },
     {
       title: "Oversized",
-      desc: "Mayor presencia visual, mejor caída y una lectura más contemporánea.",
-      image: "/camisetas/oversized.jpg",
+      desc: "Más contemporánea, mayor presencia visual, comoda para el usuario.",
+      image: "/camisetas/oversized.png",
     },
     {
-      title: "Heavy cotton",
-      desc: "Más estructura, mejor tacto y mayor percepción de valor.",
-      image: "/camisetas/heavy.jpg",
+      title: "Tipo polo",
+      desc: "Cuello caracterisitico tipo polo, mas formal y mayor percepción de valor.",
+      image: "/camisetas/polo.png",
     },
   ];
 
@@ -99,26 +99,40 @@ export default function CamisetasPage() {
         </div>
       </section>
 
-      {/* ENFOQUE */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Enfoque
-            </p>
+{/* IMAGEN FULL */}
+<section className="relative isolate overflow-hidden border-b border-white/10">
+  <div className="absolute inset-0">
+    <img
+      src="/camisetas/rollos1.png"
+      alt="Telas de colores"
+      className="h-full w-full object-cover"
+    />
 
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              La base más versátil del merch
-            </h2>
-          </div>
+    {/* oscurece para legibilidad */}
+    <div className="absolute inset-0 bg-black/30" />
 
-          <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-            Uniformes, piezas promocionales, productos de
-            lanzamiento o merch de comunidad. La diferencia está en la tela, el
-            fit, la técnica y cómo se integra el diseño.
-          </p>
-        </div>
-      </section>
+    {/* textura / depth (opcional pero recomendado) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+  </div>
+
+  {/* CONTENIDO */}
+  <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
+    <div className="max-w-2xl">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
+        
+      </p>
+
+      <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
+      </p>
+
+    </div>
+  </div>
+</section>
+
 
       {/* TIPOS */}
       <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10">
@@ -135,8 +149,6 @@ export default function CamisetasPage() {
             </div>
 
             <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-              Elegimos la base según el uso: evento, marca, dotación, campaña,
-              comunidad o producto comercial.
             </p>
           </div>
 
@@ -166,74 +178,57 @@ export default function CamisetasPage() {
         </div>
       </section>
 
-      {/* ACABADOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-            <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Personalización
-              </p>
+  {/* FONDO */}
+<section className="relative isolate overflow-hidden border-b border-white/10 px-6 py-20 md:px-10">
+  <div className="absolute inset-0 -z-10">
+    <img
+      src="/camisetas/acabados.png"
+      alt="Acabados y personalización"
+      className="h-full w-full object-cover"
+    />
 
-              <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-                Acabados que hacen la diferencia
-              </h2>
-            </div>
+    {/* Oscurece */}
+    <div className="absolute inset-0 bg-black/35" />
 
-            <div className="border-t border-white/10">
-              {finishes.map((item) => (
-                <div
-                  key={item.title}
-                  className="grid gap-3 border-b border-white/10 py-6 md:grid-cols-[0.7fr_1.3fr]"
-                >
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="text-base leading-7 text-white/65">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Depth (muy importante) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
+  </div>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
+  {/* CONTENIDO */}
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+
+      <div>
+        <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          Personalización
+        </p>
+
+        <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
+          Acabados que hacen la diferencia
+        </h2>
+      </div>
+
+      <div className="border-t border-white/10 backdrop-blur-sm">
+        {finishes.map((item) => (
+          <div
+            key={item.title}
+            className="grid gap-3 border-b border-white/10 py-6 md:grid-cols-[0.7fr_1.3fr]"
+          >
+            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <p className="text-base leading-7 text-white/70">
+              {item.desc}
             </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Proyectos donde necesitas presencia y volumen
-            </h2>
           </div>
+        ))}
+      </div>
 
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Eventos",
-              "Lanzamientos",
-              "Campañas promocionales",
-              "Equipos internos",
-              "Merch de comunidad",
-              "Activaciones",
-              "Festivales",
-              "Dotación ligera",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
+
 
       {/* GALERÍA */}
-      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#454c58]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -269,57 +264,9 @@ export default function CamisetasPage() {
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Proceso
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Así trabajamos tus camisetas
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              {
-                title: "Brief",
-                desc: "Entendemos marca, cantidad, uso, referencias y objetivo.",
-              },
-              {
-                title: "Base",
-                desc: "Definimos fit, gramaje, color, técnica y ubicación.",
-              },
-              {
-                title: "Producción",
-                desc: "Ejecutamos con foco en consistencia, calidad y tiempos.",
-              },
-              {
-                title: "Entrega",
-                desc: "Organizamos tallas, cantidades y entrega final del proyecto.",
-              },
-            ].map((step, index) => (
-              <div
-                key={step.title}
-                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
-              >
-                <p className="text-sm text-white/40">0{index + 1}</p>
-
-                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-white/65">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#13183c]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

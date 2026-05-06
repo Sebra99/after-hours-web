@@ -100,9 +100,8 @@ export default function GorrasPage() {
         </div>
       </section>
 
+{/* IMAGEN FULL */}
 <section className="relative isolate overflow-hidden border-b border-white/10">
-
-  {/* IMAGEN FULL */}
   <div className="absolute inset-0">
     <img
       src="/gorras/gorra.png"
@@ -172,8 +171,6 @@ export default function GorrasPage() {
             </div>
 
             <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-              Elegimos la base según el uso: evento, dotación ligera,
-              activación, comunidad o pieza de marca con mayor presencia.
             </p>
           </div>
 
@@ -273,57 +270,10 @@ export default function GorrasPage() {
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Proceso
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Así trabajamos tus gorras
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              {
-                title: "Brief",
-                desc: "Entendemos marca, cantidad, uso, referencias y objetivo.",
-              },
-              {
-                title: "Base",
-                desc: "Definimos tipo de gorra, color, técnica y ubicación.",
-              },
-              {
-                title: "Producción",
-                desc: "Ejecutamos con foco en consistencia, bordado y acabados.",
-              },
-              {
-                title: "Entrega",
-                desc: "Organizamos cantidades, empaque y entrega final del proyecto.",
-              },
-            ].map((step, index) => (
-              <div
-                key={step.title}
-                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
-              >
-                <p className="text-sm text-white/40">0{index + 1}</p>
-
-                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-white/65">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* FAQ */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

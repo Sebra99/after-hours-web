@@ -39,10 +39,10 @@ export default function TermosPage() {
   ];
 
   const gallery = [
-    "/termos/ref1t.png",
-    "/termos/ref2t.png",
-    "/termos/ref3t.png",
-    "/termos/ref4t.png",
+    "/termos/ref1te.png",
+    "/termos/ref2te.png",
+    "/termos/ref3te.png",
+    "/termos/ref4te.png",
   ];
 
   return (
@@ -100,6 +100,39 @@ export default function TermosPage() {
         </div>
       </section>
 
+{/* IMAGEN FULL */}
+<section className="relative isolate overflow-hidden border-b border-white/10">
+  <div className="absolute inset-0">
+    <img
+      src="/termos/placa.png"
+      alt="placa de metal"
+      className="h-full w-full object-cover"
+    />
+
+    {/* oscurece para legibilidad */}
+    <div className="absolute inset-0 bg-black/60" />
+
+    {/* textura / depth (opcional pero recomendado) */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+  </div>
+
+  {/* CONTENIDO */}
+  <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
+    <div className="max-w-2xl">
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
+        
+      </p>
+
+      <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
       {/* TIPOS */}
       <section
@@ -150,103 +183,51 @@ export default function TermosPage() {
         </div>
       </section>
 
-      {/* PERSONALIZACIÓN */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-            <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Personalización
-              </p>
+{/* PERSONALIZACIÓN */}
+<section className="relative isolate overflow-hidden border-b border-white/10 px-6 py-20 md:px-10">
+  {/* FONDO */}
+  <div className="absolute inset-0 -z-10">
+    <img
+      src="/termos/laser.png"
+      alt="Acabados para termos y vasos"
+      className="h-full w-full object-cover"
+    />
 
-              <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-                Acabados duraderos
-              </h2>
-            </div>
+    <div className="absolute inset-0 bg-black/35" />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
+  </div>
 
-            <div className="border-t border-white/10">
-              {finishes.map((item) => (
-                <div
-                  key={item.title}
-                  className="grid gap-3 border-b border-white/10 py-6 md:grid-cols-[0.7fr_1.3fr]"
-                >
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="text-base leading-7 text-white/65">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* CONTENIDO */}
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+      <div>
+        <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          Personalización
+        </p>
 
-      {/* HERO INTERMEDIO */}
-      <section className="relative isolate overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0">
-          <img
-            src="/termos/materiales-termos.jpg"
-            alt="Materiales y acabados para termos y vasos"
-            className="h-full w-full object-cover"
-          />
+        <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
+          Acabados duraderos
+        </h2>
+      </div>
 
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
-        </div>
-
-        <div className="relative mx-auto max-w-7xl px-6 py-32 md:px-10 md:py-40">
-          <div className="max-w-2xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/60">
-              Materiales
-            </p>
-
-            <h2 className="text-4xl font-semibold leading-[1.05] md:text-6xl">
-              Formatos que elevan el kit
-            </h2>
-
-            <p className="mt-6 text-base leading-7 text-white/75 md:text-lg">
-              La diferencia está en el material, el peso, el acabado y la forma
-              en la que la marca aparece. Un buen termo no se siente como
-              publicidad: se siente como un objeto útil.
+      <div className="border-t border-white/10 backdrop-blur-sm">
+        {finishes.map((item) => (
+          <div
+            key={item.title}
+            className="grid gap-3 border-b border-white/10 py-6 md:grid-cols-[0.7fr_1.3fr]"
+          >
+            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <p className="text-base leading-7 text-white/70">
+              {item.desc}
             </p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Proyectos con mayor percepción de valor
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Regalos corporativos",
-              "Equipos internos",
-              "Kits premium",
-              "Clientes",
-              "Eventos",
-              "Onboarding",
-              "Activaciones",
-              "Programas internos",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* GALERÍA */}
       <section
@@ -288,54 +269,7 @@ export default function TermosPage() {
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Proceso
-            </p>
 
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Así trabajamos tus termos y vasos
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              {
-                title: "Brief",
-                desc: "Entendemos cantidad, uso, presupuesto y contexto del proyecto.",
-              },
-              {
-                title: "Formato",
-                desc: "Definimos tipo de termo, vaso o botella según necesidad.",
-              },
-              {
-                title: "Marcación",
-                desc: "Elegimos técnica, ubicación y acabado según material.",
-              },
-              {
-                title: "Entrega",
-                desc: "Organizamos cantidades, empaque y entrega final.",
-              },
-            ].map((step, index) => (
-              <div
-                key={step.title}
-                className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
-              >
-                <p className="text-sm text-white/40">0{index + 1}</p>
-
-                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
-
-                <p className="mt-3 text-sm leading-6 text-white/65">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="border-b border-white/10 px-6 py-20 md:px-10">
