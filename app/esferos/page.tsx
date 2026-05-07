@@ -221,45 +221,10 @@ export default function OficinaPage() {
   </div>
 </section>
 
-      {/* USOS */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Ideal para
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Cuando necesitas presencia en volumen
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Ferias",
-              "Kits empresariales",
-              "Onboarding",
-              "Eventos",
-              "Activaciones",
-              "Regalos promocionales",
-              "Oficinas",
-              "Campañas comerciales",
-              "Punto de venta",
-              "Clientes y aliados",
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-white/75 backdrop-blur-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* GALERÍA */}
-      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -299,7 +264,7 @@ export default function OficinaPage() {
   
 
       {/* FAQ */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#564c58]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

@@ -39,10 +39,10 @@ export default function HoodiesPage() {
   ];
 
   const gallery = [
-    "/hoodies/ref1h.png",
-    "/hoodies/ref2h.png",
-    "/hoodies/ref3h.png",
-    "/hoodies/ref4h.png",
+    "/hoodies/ref1h1.png",
+    "/hoodies/ref2h1.png",
+    "/hoodies/ref3h1.png",
+    "/hoodies/ref4h1.png",
   ];
 
   return (
@@ -249,43 +249,90 @@ export default function HoodiesPage() {
 
       
 
-      {/* REFERENCIAS */}
-      <section id="catalogo" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#13183c]">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-            <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Referencias
-              </p>
+  
+    {/* CATÁLOGO */}
+<section
+  id="catalogo"
+  className="border-b border-white/10 bg-[#13183c] px-6 py-20 md:px-10"
+>
+  <div className="mx-auto max-w-7xl">
 
-              <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-                Bases, fits y acabados
-              </h2>
-            </div>
+    {/* HEADER */}
+    <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+      <div>
+        <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          Referencias
+        </p>
 
-            <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-              Usa estas referencias como punto de partida. Podemos aterrizar la
-              prenda según presupuesto, cantidad, técnica y objetivo del proyecto.
+        <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
+          Bases, fits y acabados
+        </h2>
+      </div>
+
+      <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
+        Usa estas referencias como punto de partida. Podemos aterrizar la
+        prenda según presupuesto, cantidad y técnica.
+      </p>
+    </div>
+
+    {/* GRID */}
+    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          image: gallery[0],
+          title: "Ref. IVAN001",
+          desc: "En algodón perchado rojo malboro",
+        },
+
+        {
+          image: gallery[1],
+          title: "Ref.Milano",
+          desc: "Oversized en algodon perchado negro noche",
+        },
+
+        {
+          image: gallery[2],
+          title: "Ref.Vienna",
+          desc: "En algodon perchado verde menta",
+        },
+
+        {
+          image: gallery[3],
+          title: "Ref.Turin",
+          desc: "Oversized en algodon perchado azul oscuro",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]"
+        >
+          {/* Imagen */}
+          <img
+            src={item.image}
+            alt={item.title}
+            className="h-[360px] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+          {/* Texto */}
+          <div className="absolute inset-x-0 bottom-0 p-5">
+            <h3 className="text-2xl font-semibold text-white">
+              {item.title}
+            </h3>
+
+            <p className="mt-1 text-sm text-white/70">
+              {item.desc}
             </p>
           </div>
-
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {gallery.map((img, index) => (
-              <div
-                key={img}
-                className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]"
-              >
-                <img
-                  src={img}
-                  alt={`Referencia hoodie ${index + 1}`}
-                  className="h-[360px] w-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+      ))}
 
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">

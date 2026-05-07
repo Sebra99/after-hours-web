@@ -98,11 +98,11 @@ export default function Home() {
  <main className="relative min-h-screen text-white">
   <div className="absolute inset-0 -z-10">
     <img src="hero4.png" alt="background" className="w-full h-full object-cover" />
-    <div className="absolute inset-0 bg-black/60" />  {/* ← sube de 0.2 a 0.6 */}
+    <div className="absolute inset-0 bg-black/60" /> 
   </div>
 
       {/* ── HERO ── */}
-      <section style={{ position: "relative", overflow: "hidden", backgroundColor: "black", borderBottom: "1px solid rgba(170, 165, 165, 0.1)", minHeight: "520px" }}>
+      <section style={{ position: "relative", overflow: "hidden", backgroundColor: "rgb(17, 14, 50)", borderBottom: "1px solid rgba(170, 165, 165, 0.1)", minHeight: "520px" }}>
 
         {/* Fila 1 */}
         <div style={{ position: "absolute", top: "15%", left: 0, display: "flex", gap: "32px", animation: "marquee-slow 40s linear infinite", whiteSpace: "nowrap" }}>

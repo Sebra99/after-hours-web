@@ -272,7 +272,7 @@ export default function TermosPage() {
 
 
       {/* FAQ */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
+      <section className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#79482f]">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.25em] text-white/50">

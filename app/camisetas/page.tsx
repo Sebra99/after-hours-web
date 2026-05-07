@@ -188,7 +188,7 @@ export default function CamisetasPage() {
     />
 
     {/* Oscurece */}
-    <div className="absolute inset-0 bg-black/35" />
+    <div className="absolute inset-0 bg-black/25" />
 
     {/* Depth (muy importante) */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
