@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function GorrasPage() {
   const capTypes = [
     {
-      title: "Dad cap",
-      desc: "Relajada, versátil y fácil de usar en eventos, equipos o comunidad.",
-      image: "/gorras/dad-cap.jpg",
+      title: "Gorras clasicas",
+      desc: "",
+      image: "/gorras/cap.png",
     },
     {
-      title: "Snapback",
-      desc: "Más estructurada, con mayor presencia visual y lectura urbana.",
-      image: "/gorras/snapback.jpg",
+      title: "Visera",
+      desc: "",
+      image: "/gorras/visera.png",
     },
     {
-      title: "Trucker",
-      desc: "Ligera, funcional y muy útil para activaciones, campo o clima cálido.",
-      image: "/gorras/trucker.jpg",
+      title: "Gorros y otros",
+      desc: "",
+      image: "/gorras/gorros.png",
     },
   ];
 
@@ -90,10 +90,10 @@ export default function GorrasPage() {
               </a>
 
               <a
-                href="#tipos"
+                href="#catalogo"
                 className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
               >
-                Ver opciones
+                Ver catalogo
               </a>
             </div>
           </div>
@@ -134,27 +134,6 @@ export default function GorrasPage() {
   </div>
 </section>
 
-
-      {/* ENFOQUE */}
-      <section className="border-b border-white/10 px-6 py-20 md:px-10">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Enfoque
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
-              Visibilidad que se usa
-            </h2>
-          </div>
-
-          <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-            Una gorra funciona porque combina presencia de marca, utilidad y
-            repetición. Si está bien diseñada, no se queda guardada: acompaña
-            eventos, equipos, clientes y comunidad.
-          </p>
-        </div>
-      </section>
 
       {/* TIPOS */}
       <section id="tipos" className="border-b border-white/10 px-6 py-20 md:px-10 bg-[#6c6967]">
@@ -239,7 +218,7 @@ export default function GorrasPage() {
           <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
               <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                Referencias
+                Catalogo
               </p>
 
               <h2 className="mt-3 text-3xl font-semibold md:text-5xl">
@@ -247,10 +226,20 @@ export default function GorrasPage() {
               </h2>
             </div>
 
-            <p className="max-w-2xl text-base leading-7 text-white/70 md:text-lg">
-              Usa estas referencias como punto de partida. Podemos ajustar
-              estructura, color, técnica y ubicación según el proyecto.
-            </p>
+            <div className="max-w-2xl">
+  <p className="text-base leading-7 text-white/70 md:text-lg">
+    Usa estas referencias como punto de partida. Podemos ajustar estructura, color,
+    técnica y ubicación según el proyecto.
+  </p>
+
+  <Link
+    href="/catalogo-gorras-y-gorros"
+    className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-black"
+  >
+    Ver más
+    <span className="transition group-hover:translate-x-1">→</span>
+  </Link>
+</div>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

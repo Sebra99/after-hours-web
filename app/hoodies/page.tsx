@@ -90,10 +90,10 @@ export default function HoodiesPage() {
               </a>
 
               <a
-                href="#tipos"
+                href="#catalogo"
                 className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
               >
-                Ver opciones
+                Ver catálogo
               </a>
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function HoodiesPage() {
     <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
       <div>
         <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-          Referencias
+          Catálogo
         </p>
 
         <h2 className="mt-3 text-3xl font-semibold md:text-5xl">

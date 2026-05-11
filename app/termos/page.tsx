@@ -5,17 +5,17 @@ export default function TermosPage() {
     {
       title: "Termos metálicos",
       desc: "Alta percepción de valor, durabilidad y uso diario.",
-      image: "/termos/termos-metal.jpg",
+      image: "/termos/termos-metal.png",
     },
     {
       title: "Vasos térmicos",
       desc: "Prácticos para oficina, movilidad y consumo frecuente.",
-      image: "/termos/vasos.jpg",
+      image: "/termos/vasos.png",
     },
     {
       title: "Botellas deportivas",
       desc: "Ligeras, funcionales y útiles para equipos, eventos o actividad física.",
-      image: "/termos/botellas.jpg",
+      image: "/termos/botellas.png",
     },
   ];
 
